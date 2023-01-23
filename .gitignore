@@ -2,3 +2,5 @@ info.py
 
 *.pyc
 __pycache__/
+BlueStacks_nxt/
+platform-tools/

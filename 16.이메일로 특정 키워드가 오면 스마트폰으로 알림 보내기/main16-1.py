@@ -30,7 +30,6 @@ for mail in reversed(last_email):
     print('DATE: ', email_message['Date'])
     subject,encode = find_encoding_info(email_message['Subject'])
     print('SUBJECT: ', subject)
-    print(encode)
     print('='*70)
 
 imap.close()
