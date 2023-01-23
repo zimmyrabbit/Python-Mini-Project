@@ -93,6 +93,6 @@ for mail in reversed(last_email):
 
     if subject_str.find("결제") >= 0:
         kakao_send_message = email_from + '\n' + email_date + '\n' + subject_str
-        f_get_refresh_token()
+        #f_get_refresh_token()
         access_token = f_reissue_token()  # 새로운 액세스 토큰을 발급 받음
         f_send_msg(access_token, kakao_send_message)
